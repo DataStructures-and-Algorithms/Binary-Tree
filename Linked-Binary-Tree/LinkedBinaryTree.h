@@ -17,7 +17,7 @@ private:
 public:
     LinkedBinaryTree();
     
-    BinaryTreeNode<U>** getRoot();
+    BinaryTreeNode<U>*& getRoot();
     
     void preOrder(BinaryTreeNode<U>* root);
     
@@ -42,8 +42,8 @@ LinkedBinaryTree<U>::LinkedBinaryTree() {
 }
 
 template <class U>
-BinaryTreeNode<U>** LinkedBinaryTree<U>::getRoot() {
-    return &root;
+BinaryTreeNode<U>*& LinkedBinaryTree<U>::getRoot() {
+    return root;
 }
 
 template <class U>
